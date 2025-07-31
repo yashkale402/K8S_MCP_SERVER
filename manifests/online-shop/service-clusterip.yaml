@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: online-shop-service
+  namespace: online-shop
+  labels:
+    app: online-shop-app
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+  selector:
+    app: online-shop-app

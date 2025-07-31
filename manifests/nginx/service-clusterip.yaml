@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-pod
+  namespace: nginx
+  labels:
+    app.kubernetes.io/component: nginx-pod
+    app.kubernetes.io/managed-by: kubernetes-mcp-server
+    app.kubernetes.io/name: nginx-pod
+    app.kubernetes.io/part-of: kubernetes-mcp-server-run-sandbox
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app.kubernetes.io/component: nginx-pod
+    app.kubernetes.io/managed-by: kubernetes-mcp-server
+    app.kubernetes.io/name: nginx-pod
+    app.kubernetes.io/part-of: kubernetes-mcp-server-run-sandbox
