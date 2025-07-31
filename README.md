@@ -25,6 +25,13 @@ This project sets up:
 
 ## 🏗️ Architecture Diagram
 
+### 🖼️ Visual Architecture Overview
+![Kubernetes Architecture Diagram](kubernetes-architecture-diagram.png)
+
+*High-resolution architecture diagram showing the complete infrastructure setup*
+
+### 📋 Architecture Components
+
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────┐
 │                           🌐 EXTERNAL ACCESS                                    │
